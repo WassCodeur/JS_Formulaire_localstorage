@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+.status{
+    border: 1px solid black;
+}
+.fa-user{
+    font-size: 50px;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+
+}
