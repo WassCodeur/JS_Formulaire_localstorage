@@ -79,9 +79,8 @@ form{
     display: flex;
     justify-content: center;
     justify-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     border: 1px solid black;
     width: 100%;
