@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="admin_form.css">
+    <link rel="stylesheet" href="add_user_form.css">
     <link rel="stylesheet" href="assets/Icones/fontawesome-free-6.1.1-web/css/all.css">
     <script src="index.js" defer></script>
     <title>Document</title>
@@ -16,18 +18,163 @@
                 
             </div>
             <div class="profile">
-                <a href="##">
+                <a href="##" >
                     <i class="fa-solid fa-user"></i>
                 </a>
             </div>
         </div>
-        <div>
-            <script>
-            //  var date = new Date();
-            //  let time = date.getHours() + ":" + ('0'+date.getMinutes()).slice(-2) + ":" + ('0'+date.getSeconds()).slice(-2); 
-            //  var options = {weekday: "long", year: "numeric", month: "long", day: "2-digit" , time :"numeric"};
-            //  alert(`${date.toLocaleDateString("fr-FR", options)} ${time}`);
-            </script>
+        <div class="nav_bar">
+            <div class="search_sex_bar">
+                <div class="search">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                </div>
+                <div class="sex">
+                    <select name="" id="">
+                        <option value="sexe">
+                            sexe
+                        </option>
+                        <option value="M">
+                            Male
+                        </option>
+                        <option value="F">
+                            Female
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn_add_delete">
+                <div class="add">
+                    <button id="btn_add" class="fa-solid fa-plus">ajouter</button>
+                </div>
+                <div class="delete">
+                    <button id="btn_delete" class="fa-solid fa-trash">Suprimer</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_table">
+            <table cellspacing="0" rowspacing="0">
+                <thead>
+                    <tr>
+                        <th class="check">
+                            A
+                        </th>
+                        <th class="id">
+                            ID
+                        </th>
+                        <th class="nom">
+                            Nom
+                        </th>
+                        <th class="firstname">
+                            Prénom
+                        </th>
+                        <th class="birthday">
+                            Date de Naissance
+                        </th>
+                        <th class="email">
+                            Adresse Mail
+                        </th>
+                        <th class="phone">
+                            Télephone
+                        </th>
+                        <th class="sexe">
+                            Sexe
+                        </th>
+                        <th class="actions">
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>  
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="modal" class="modals">
+            <div id="modal_content" class="modals_contener">
+                <div class="close" >
+                    <a href="##" id="close_modal"> <i class="fa-solid fa-xmark"></i> </a>
+                </div>
+                <form action="" name="Myform" onsubmit="formVlidator()">
+                    
+                    <div>Info Admin</div>
+                    <hr>
+                    <label for="" class="label1">Nom 
+                        <input type="text" placeholder="votre nom Complet" class="input" name="MyInput">
+                    </label>
+                    <label for="" class="label1">Age 
+                        <input type="number" placeholder="votre Age" class="input" name="MyInput">
+                    </label>
+                    <label for="" class="label1">Adresse 
+                        <input type="text" placeholder="votre Adresse" class="input" name="MyInput">
+                    </label>
+                    <label for="" class="label1">Télephone 
+                        <input type="phone" placeholder="votre numéro de téléphone" class="input" name="MyInput">
+                    </label>
+                    <label for="" class="label1">E-mail 
+                        <input type="email" placeholder="votre E-mail" class="input" name="MyInput">
+                    </label>
+                    <select name="" id="sex-admin">
+                        <option value="sexe">
+                            sexe
+                        </option>
+                        <option value="M">
+                            Male
+                        </option>
+                        <option value="F">
+                            Female
+                        </option>
+                    </select>
+                    <button id="btn_save" class="btn">Save</button>
+                    <button id="btn_annuler" class="btn">Annuler</button>
+                </form>
+            </div>
+        </div>
+        <div id="modal2" class="modals">
+            <div id="modal_contener2" class="modals_contener">
+                <div class="close">
+                    <a href="##" id="close_modal"> <i class="fa-solid fa-xmark"></i> </a>
+                </div>
+                <div>
+                    Ajouter Une Personne
+                </div>
+                <hr>
+                <form action="" name="Myform" onsubmit="formVlidator()">
+
+                    <label for="" class="label_data">Nom 
+                        <input type="text" placeholder="Nom de famille" name="MyInput"class="input">
+                    </label>
+                    <label for="" class="label_data">Prénoms 
+                        <input type="text" placeholder="Prénoms" name="MyInput"class="input">
+                    </label>
+                    <label for="" class="label_data">Date de Naissance:
+                        <input type="date" placeholder="date" name="MyInput"class="input">
+                    </label>
+                    <label for="" class="label_data">Adresse Mail
+                        <input type="email" placeholder="votre mail" name="MyInput"class="input">
+                    </label>
+                    <label for="" class="label_data">Télephone
+                        <input type="phone" name="MyInput" class="input">
+                    </label>
+                    <label for="" class="label_data">Sexe :
+                        <span>M <input type="checkbox" value="M"></span>
+                        <span>F <input type="checkbox" value="F"></span>
+                    </label>
+                    <label for="" class="label_data">
+                        <input type="submit" value="Envoyer">
+                    </label>
+                </form>
+            </div>
         </div>
     </main> 
 </body>

@@ -1,0 +1,30 @@
+.label1{
+    display: block;
+
+}
+.label1{
+    margin-top: 10px;
+}
+.btn{
+    display: inline;
+    margin-top: 20px;
+    border: 1px solid black;
+    border: 10px;
+    padding: 5px 15px 5px 15px ;
+}
+#modal{
+    visibility: hidden; 
+}
+#sex-admin{
+   display: block;
+}
+#modal_content{
+
+}
+#close_modal{
+    float: right;
+
+}
+.close{
+    margin-bottom: 10px;
+}
