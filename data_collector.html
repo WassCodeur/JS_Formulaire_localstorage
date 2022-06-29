@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data_collector.css">
+    <script src="data_collector.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <table cellspacing="0" rowspacing="0">
+        <thead>
+            <tr>
+                <th class="check">
+                    A
+                </th>
+                <th class="id">
+                    ID
+                </th>
+                <th class="nom">
+                    Nom
+                </th>
+                <th class="firstname">
+                    Prénom
+                </th>
+                <th class="birthday">
+                    Date de Naissance
+                </th>
+                <th class="email">
+                    Adresse Mail
+                </th>
+                <th class="phone">
+                    Télephone
+                </th>
+                <th class="sexe">
+                    Sexe
+                </th>
+                <th class="actions">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>  
+            </tr> -->
+        </tbody>
+    </table>
+    <form action="" name="Myform" >
+
+        <label for="" class="label_data">Nom 
+            <input type="text" placeholder="Nom de famille" name="MyInput"class="input" id="nom" >
+        </label>
+        <label for="" class="label_data">Prénoms 
+            <input type="text" placeholder="Prénoms" name="MyInput"class="input" id="prenom">
+        </label>
+        <label for="" class="label_data">Date de Naissance:
+            <input type="date" placeholder="date" name="MyInput"class="input" id="birthday">
+        </label>
+        <label for="" class="label_data">Adresse Mail
+            <input type="email" placeholder="votre mail" name="MyInput"class="input" id="mail">
+        </label>
+        <label for="" class="label_data">Télephone
+            <input type="phone" name="MyInput" class="input" id="phone">
+        </label>
+        <select name="sex" id="sexe">
+            <option value="M">male</option>
+            <option value="F">female</option>
+        </select>
+        <label for="" class="label_data">
+            <input type="button" value="Envoyer" id="send" onclick="validation()">
+        </label>
+    </form>
+</body>
+</html>

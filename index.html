@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="admin_form.css">
     <link rel="stylesheet" href="add_user_form.css">
     <link rel="stylesheet" href="assets/Icones/fontawesome-free-6.1.1-web/css/all.css">
-    <script src="index.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script src="./data_collector.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -85,8 +86,8 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="tbody">
+                    <!-- <tr>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -96,7 +97,7 @@
                         <td></td>
                         <td></td>
                         <td></td>  
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
@@ -152,26 +153,26 @@
                 <form action="" name="Myform" onsubmit="formVlidator()">
 
                     <label for="" class="label_data">Nom 
-                        <input type="text" placeholder="Nom de famille" name="MyInput"class="input">
+                        <input type="text" placeholder="Nom de famille" name="MyInput"class="input" id="nom">
                     </label>
                     <label for="" class="label_data">Prénoms 
-                        <input type="text" placeholder="Prénoms" name="MyInput"class="input">
+                        <input type="text" placeholder="Prénoms" name="MyInput"class="input" id="prenom">
                     </label>
                     <label for="" class="label_data">Date de Naissance:
-                        <input type="date" placeholder="date" name="MyInput"class="input">
+                        <input type="date" placeholder="date" name="MyInput"class="input" id="birthday">
                     </label>
                     <label for="" class="label_data">Adresse Mail
-                        <input type="email" placeholder="votre mail" name="MyInput"class="input">
+                        <input type="email" placeholder="votre mail" name="MyInput"class="input" id="mail">
                     </label>
                     <label for="" class="label_data">Télephone
-                        <input type="phone" name="MyInput" class="input">
+                        <input type="phone" name="MyInput" class="input" id="phone">
                     </label>
-                    <label for="" class="label_data">Sexe :
-                        <span>M <input type="checkbox" value="M"></span>
-                        <span>F <input type="checkbox" value="F"></span>
-                    </label>
+                    <select name="sex" id="sexe">
+                        <option value="M">male</option>
+                        <option value="F">female</option>
+                    </select>
                     <label for="" class="label_data">
-                        <input type="submit" value="Envoyer">
+                        <input type="button" value="Envoyer" onclick="validation()">
                     </label>
                 </form>
             </div>
