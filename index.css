@@ -52,6 +52,10 @@ table, tr{
     width: 100%;
     border: 1px solid black;
 }
+thead{
+    background: #337ab7;
+    color: rgb(237, 232, 232);
+}
 th,td{
     border: 1px solid black;
 }
@@ -92,4 +96,13 @@ form{
 .fa-xmark{
     font-size: 25px;
     color: black;
+}
+.fa-comment{
+    color: rgb(154, 165, 175);
+}
+.fa-square-xmark{
+    color: rgb(93, 8, 8);
+}
+.fa-pencil{
+    color: rgb(7, 61, 7);
 }
