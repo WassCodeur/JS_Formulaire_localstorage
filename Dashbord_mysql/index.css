@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+html,body {
+    padding:  0px;
+    margin: 0px;
+}
+.dte_bar{
+    font-size: x-large;
+    margin-top: 15px;
+}
+.profile{
+
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 20px;
+}
+.fa-user{
+    font-size: 50px;
+}
+.wrapped_date_menu_profile{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sex_search_add_delete{
+    display: flex;
+    justify-content: space-around;
+}
+.wrapped_sex_searbar, .wrap_add_delete_user{
+    display: flex;
+}
+.search{
+    position: relative;
+    margin-right: 40px;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+.add_user{
+    margin-right: 40px;
+}
+.menu_bar{
+    margin-top: 15px;
+}
+.menu{
+    text-decoration: none;
+    font-size: large;
+    margin: 10px;
+    color: black;
+}
+.menu:hover{
+    color: red;
+}
+button{
+    cursor: pointer;
+}

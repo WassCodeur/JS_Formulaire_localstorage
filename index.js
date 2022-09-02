@@ -18,7 +18,7 @@
 
 // console.log(UseList);
 
-//Affichage de la date et l'heure;
+//Affichage de la date et l'heure
 function displayDte(){
 
 }
@@ -53,5 +53,11 @@ function displayModal1(){
             Modal2.style.visibility ='visible'
         }else{
             Modal2.style.visibility ='hidden'
-        }};
+        }
+    };
+
+//localstorage 
+    //Saving data as key/value pair
+    
+
 

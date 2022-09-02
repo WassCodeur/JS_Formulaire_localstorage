@@ -36,6 +36,20 @@
     margin-right: 20px;
     
 }
+#btn_add{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background: rgb(9, 107, 9);
+    color: rgb(229, 229, 229);
+}
+#btn_delete{
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    background: rgb(109, 4, 4);
+    color: rgb(229, 229, 229);    
+}
 .search{
     position: relative;
 }
@@ -55,6 +69,7 @@ table, tr{
 thead{
     background: #337ab7;
     color: rgb(237, 232, 232);
+    padding: 15px;
 }
 th,td{
     border: 1px solid black;
